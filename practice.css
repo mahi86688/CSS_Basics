@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    margin: 0.5rem;
+    text-align: center;
+}
+nav {
+    border: 2px solid #333;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+
+}
+h2{
+    padding: 1rem;
+    background-color: yellow;
+    border-radius: 2rem 2rem 0 0;
+}
+ul{
+    list-style-type: none;
+   }
+li{
+    border-top: 1px solid black;
+}
+li a{
+    display: block; /* it will give the entire box selection */
+}
+li a,
+li :visited{
+    text-decoration: none;
+    color: black;
+}
+li a:hover,
+li a:focus{
+    color: whitesmoke;
+    background: #333;
+    cursor: pointer;
+} 
+li:last-child a{  /* pseudo selector here last element border setting*/
+    border-radius: 0 0 2rem 2rem;
+}
+
+
+
+
+
+

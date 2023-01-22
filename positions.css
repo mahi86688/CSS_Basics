@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 25px;
+    min-height: 200vh;
+}
+.outlone-container{
+    border: 3px dashed black;
+    width: 65vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+}
+.inline-container{
+    border: 2px solid black;
+    width: 35vw;
+    height: 50vh;
+    margin: 4em auto;
+/* position: relative; */    
+}
+.box{
+    width: 130px;
+    height: 100px;
+    color:#fff;
+    padding: 1.7rem;
+}
+.absolute{
+    background-color: blue;
+    position: absolute;
+    top:0px;
+    left: 0;
+    /* left: -100000px; this will make the content disappear on the screen but still it is part of the webpage we use opacity and display:none properties*/ 
+    z-index: 1; /* it will appear card on the top */
+}
+.relative{
+    background-color: red;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    z-index: 1;
+}
+.fixed{
+    background-color: green;
+    top: 100px;
+    position: fixed;
+}
+.sticky{
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+/* ----------- */
+
+html{scroll-behavior: smooth;}
+
+section{
+    height: 100vh ;
+}
+.red{background-color: red;}
+.blue{background-color: blue;}
+.Yellow{background-color: yellow;}
+.green{background-color:green;}
+
+header,footer{
+    text-align: center;
+    
+    font-size: 40px;
+    padding: 23px;
+}
+header {
+    position: sticky;
+    top: 0;
+    height: 100px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color:black;
+    position: fixed;
+    bottom: 0;
+}
+a:visited{
+    color:fuchsia;
+}
+A:hover{color: white;text-decoration: underline;}
+a{text-decoration: none;}
+
+.social{
+    background-color: royalblue;
+    color: #fff;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    z-index: 1;
+}
