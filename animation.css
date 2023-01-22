@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'roboto', sans-serif;
+    font-size: 1.5rem;
+}
+body{
+    min-height: 100vh;
+    margin:20px ;
+    display: flex;
+    flex-flow: column nowrap;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: center; */
+    /* align-items:center */
+    place-content: center;
+    place-items: center;
+    gap: 1rem;
+}
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: grid;
+    place-content: center;
+}
+div:first-child{
+    background-color: dodgerblue;
+    /* transform: translateX(-50%);it moves left for negative sign and right for the positive sign  */
+    /* transform: rotatex(180deg); */
+    /* transform: scaleX(120%); */
+    /* transform: skewX(-10deg); */
+
+}
+div:nth-child(2){
+    background-color:yellow;
+    /* transform: translateY(-3rem);it moves up and down */
+    /* transform: rotatex(180deg); */
+    /* transform: scaleY(120%); */
+    /* transform: skewY(10deg); */
+}
+div:last-child{
+    background-color: limegreen;
+    /* transform: translate(100%,-8rem); 1st value is for x and second value is for y */
+    /* transform: rotate(135deg); */
+    /* transform: scale(150%,150%); */
+    /* transform: skew(-10deg,10deg); */
+}
+div:hover{
+    background-color: aquamarine;
+    /* transition-property: background-color,transform; */
+    /*transition-duration: 2s, 3s;     it will take 2sec to show the transition when u hover on something */
+    /* transition-delay: 2s, 0.5; */
+    transition-timing-function: ease-in-out;/* ease in and easec inout and ease out and linear */
+    transition: all 2s 0.5s;
+}
+div:last-child:hover{
+    transform: rotate(180deg);
+} 
+/* div:nth-child(2):hover{
+    background-color: purple;
+}
+div:last-child:hover{
+    background-color:red;
+} */
+.animate{
+    /* animation-name:slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    animation-delay: 1s; */
+    /*animation-direction: normal; alternate */
+    /*animation-fill-mode: forwards; it fill the color based on the last iteration color */
+    animation: 5s ease-in-out 1s 2 normal forwards slide;/* duration 5s,ani-timing-function,delay 1s,iteration count 2,ani-direction is norma,ani-fill-mode is forwards,ani-name is slide,:this is shorthand property */
+}
+@keyframes slide{
+    0%{
+        transform:translateX(0);
+    } 
+    33%{
+        transform: translateX(300px) rotate(180deg);
+    }  
+    66%{
+        transform: translateX(-300px) rotate(-180deg);
+    }  
+    100%{
+        transform: translateX(0);
+        background-color: rebeccapurple;
+    }  
+}
+
+

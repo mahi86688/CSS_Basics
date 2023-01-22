@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 800px;
+    min-height: 400px;
+    margin: 20px auto;
+    /* margin-inline: auto; */
+    border: 1px solid black;
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* gap: 1rem; */
+    /* align-items: center; */
+    justify-content: center;
+    /* align-items: flex-start; */
+    align-items: center;
+    flex-direction: column;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-flow: row nowrap;/* shorthand property first flex direction second is flexwrap */
+    align-content: center;
+    align-content: space-evenly;
+    
+}
+.box{
+    background-color: black;
+    color: white;
+    /* min-width: 80px; */
+    height: 70px;
+    /* padding:10px; */
+    font-size: 25px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content:center ;/* we can use these three properties to center any element inside of a container or we could center element inside of the body which would be considered container the body ele of page */
+    align-items: center;
+    flex-basis: 100px;/* it will gives the width of the box */
+   /* flex-grow: 1; it grew up as much as needed to take up the rest of the container will givesome gap b/w the container */
+   /* flex-shrink: 1; */
+   /* flex:grow shrink basis; && shorthand property*/
+   flex:1 1 100px;
+}
+.box:nth-child(2){
+     /* flex-grow: 2; */
+     /* flex-shrink: 2; */
+     /* flex:grow shrink basis; */
+     flex: 2 2 100px;
+     order: -1; /* 2 or 4 */
+     
+}
+

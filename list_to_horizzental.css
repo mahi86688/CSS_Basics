@@ -1,0 +1,27 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+ul{
+    list-style-type: none;
+    padding:20px;
+    text-align: right;
+    background-color:black;
+    margin: 0;
+}
+li a{
+    color: red;
+    text-decoration: none;
+}
+li{
+    display: inline-block;  /* this will apply the listelements into horizental line */
+    margin-inline: 0.5rem; /* it is used to give space for the horizental list */
+}
+li a:hover,a:focus{
+    text-decoration: underline;
+} 
+li a:active{
+    color:white
+}
+
+

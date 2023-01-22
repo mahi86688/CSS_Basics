@@ -1,0 +1,35 @@
+.column{
+    /* column-count: 3 ;
+    column-width: 250px; */
+    columns: 4 250px; /* above both and this one line is same */
+    column-rule: 3px solid red; /* it will give vertical line between the columns */
+    column-gap: 3rem;
+    font-size: 20px;
+}
+.column p{
+    margin-top: 0;
+}
+.column h2{
+    margin-top: 0;
+    padding: 1rem;
+    background-color: black;
+    color: red;
+    text-align: center;
+    break-inside: avoid;  /* it avoids splits of the header part the comes into the other column or breakbefore is more specificity*/
+    /* break-before: column;  it make sure the header art will be in the same paragraph and same column */
+}
+.column .quote{
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    column-span: all;
+    margin-top: 3rem; /* if margin dont apply check the specificity cal when u have classes under the container class */
+}
+.nowrap{
+    white-space: nowrap; /* it wont break the line or content inside the span class */
+}
+
+
+
+
+
