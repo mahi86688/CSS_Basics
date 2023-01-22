@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* begine reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font: 1.5rem "Nunito",sans-serif;
+    min-height: 100vh;
+    background-color:lightskyblue;
+    background-image: radial-gradient(whitesmoke,lightskyblue);
+    display: flex;
+    flex-direction: column;
+}
+header,nav,main,footer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+header,footer{
+    position: sticky;
+    background-color: black;
+    color: whitesmoke;
+}
+nav{
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+}
+main{
+    flex-grow: 1;
+}
+header{
+    top: 0; 
+}
+footer{
+    bottom: 0;
+}
+/* Syntax:
+   @media media type and (condition :and breakpoint){
+     //CSS rules     
+}  */
+
+/* \\ Smal̥l̥ */
+
+@media screen and (min-width:576px){
+    body{
+        background-color: green;
+        background-image: radial-gradient(whitesmoke,green);
+    }
+    nav{
+        display: none;
+    }
+}
+
+/* \\Medium */
+@media screen and (min-width:768px){
+    body{
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke,gold);
+    }
+}
+/* \\Large*/
+@media screen and (min-width:920px){
+    body{
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke,firebrick);
+    }
+}
+/* \\XL*/
+@media screen and (min-width:1110px){
+    body{
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple);
+    }
+}
+/* Mobile device landsacpe*/
+@media screen and (max-height:425px)and (min-aspect-ratio:7/4){
+    body{
+        background-color: dodgerblue;
+        background-image: radial-grad
+        ient(whitesmoke, dodgerblue);
+    }
+    h1,h2{
+        font-size: 1.5rem;
+    }
+    nav{display: none;}
+}
+ 
